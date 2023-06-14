@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+    <!-- {{>navbar}} -->
+     <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars logo-icon"></i>
+            </label>
+            <label class="logo" style="font-family: sans-serif;">Soferial</label>
+            <ul>
+                 <li><a class="active" href="index.html">Home</a></li>
+                <!-- <li><a href="About.html">About</a></li> -->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">testimonials</a></li>
+                 <li><a href="work.html">Our work</a></li>
+            </ul>
+<!-- const template_path2 = path.join(__dirname, '../src/templates/views') -->
+        </nav>
+    </div>
+    <section class="header">
+<div class="main-image">
+    <h1>Contact us</h1>
+    <p>Share our problems with us and we will try our best to solve your problem</p>
+</div>
+    </section>
+    <!-- {{!-- code for form  --}} -->
+    <section class="form-main-head">
+        <div class="container">
+            <h1>Share Your Issues</h1>
+            <p>Feel free to share any type of problems with us </p>
+            <form action="https://formsubmit.co/hetankumar935@gmail.com"   method="POST" >
+                <div class="row">
+                    <div class="column">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your name here" required>
+                    </div>
+                    <div class="column">
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email" placeholder="Your email here" >
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="column">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" name="contact" id="contact" placeholder="Your phone number here" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="issue">Describe your problems</label>
+                        <textarea id="issue" name="issue" placeholder="Describe your problem in detail here" rows="3"></textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- {{!-- code for form end --}} -->
+
+    <!-- {{!-- code for our contact --}} -->
+    <section id="our-contact">
+        <h1>Our Contact details</h1>
+        <div class="our-address">
+            <div class="first-item">
+                <div class="details s2nd">
+    
+                    <h4>Our Address</h4>
+                    <p>D/2-1005 , new delhi 110076 , India</p>
+                </div>
+                <div class="details s2nd">
+    
+                    <h4>landmark</h4>
+                    <p>Near kalindi kunj police station</p>
+                </div>
+                
+            </div>
+            <div class="second-item">
+                <div class="details s2nd">
+                    <h4>Email</h4>
+                    <p><a href="mailto:hetankumar935@gmail.com">hetankumar935@gmail.com</a></p>
+                </div>
+                <div class="details s2nd">
+                    <h4>phone-1</h4>
+                    <p><a href="tel:9999107716">9999107716</a></p>
+                </div>
+                <div class="details s2nd">
+                    <h4>phone-2</h4>
+                    <p><a href="tel:9210841857">9210841857</a></p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!-- {{!-- code for our contact end --}} -->
+    
+</body>
+</html>
